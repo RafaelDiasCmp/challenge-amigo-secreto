@@ -9,9 +9,21 @@ function adicionarAmigo() {
     } else {
         amigosAdicionados.push(amigo);
         inputDoAmigo.value = ''; 
-        
+        atualizarListaDeAmigos();
     }
 
     console.log(amigo);
     console.log(amigosAdicionados);
 }
+
+function atualizarListaDeAmigos(){
+    let lista = document.getElementById('listaAmigos')
+
+    lista.innerHTML = "";
+    
+    amigosAdicionados.forEach(amigo => {
+        const li = document.createElement("li");
+        li.textContent = amigo;
+        lista.appendChild(li);
+      });
+    }
