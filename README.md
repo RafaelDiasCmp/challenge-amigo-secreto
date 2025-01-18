@@ -2,6 +2,8 @@
 
 Este projeto é uma aplicação simples para sorteio de "Amigo Secreto", onde você pode adicionar amigos a uma lista e sortear aleatoriamente um amigo secreto. O projeto utiliza HTML, CSS e JavaScript para sua implementação.
 
+<img src="image.png" alt="Tela Inicial" width="800">
+
 ## Funcionalidades
 
 - **Adicionar Amigos**: Adicione amigos à lista de amigos secretos.
