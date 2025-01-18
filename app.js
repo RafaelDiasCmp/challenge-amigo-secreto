@@ -27,3 +27,26 @@ function atualizarListaDeAmigos(){
         lista.appendChild(li);
       });
     }
+
+function sortearAmigo(){
+    if (amigosAdicionados.length == 0){
+        alert('Insira amigos para realizar o sorteio!')
+    } else {
+        
+        let sorteio = Math.floor(Math.random() * amigosAdicionados.length);
+        let amigoSorteado = amigosAdicionados[sorteio];
+        console.log(amigoSorteado);
+        
+        mostrarResultado(amigoSorteado);
+    }
+
+function mostrarResultado(amigoSorteado){
+    
+        let resultado = document.getElementById('resultado');
+        resultado.innerHTML = `O amigo secreto sorteado é: ${amigoSorteado}`
+
+        let lista = document.getElementById('listaAmigos');
+        lista.style.display = 'none';
+}
+
+}
